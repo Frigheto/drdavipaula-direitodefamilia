@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(start index.html)",
+      "Bash(npm run *)",
+      "Bash(start *)",
+      "Bash(cp \"C:\\\\Users\\\\pc\\\\Downloads\\\\foto para site\\\\Captura de tela 2026-04-20 082104.png\" \"C:\\\\Users\\\\pc\\\\Downloads\\\\site dr davi\\\\landing-page-elizandra-girardon-main\\\\public\\\\images\\\\logo-davi.png\")",
+      "Bash(cp \"C:\\\\Users\\\\pc\\\\Downloads\\\\foto para site\\\\Captura de tela 2026-04-20 084959.png\" \"C:\\\\Users\\\\pc\\\\Downloads\\\\site dr davi\\\\landing-page-elizandra-girardon-main\\\\public\\\\images\\\\advogado.jpg\")"
+    ]
+  }
+}
