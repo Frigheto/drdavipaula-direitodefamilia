@@ -1,4 +1,4 @@
-import { Heart, Users, DollarSign, FileText, Home, Baby, Shield, AlertTriangle, Sparkles, ArrowRight } from "lucide-react";
+import { Heart, Users, DollarSign, FileText, Home, Baby, Shield, AlertTriangle, Sparkles, ArrowRight, UserCheck } from "lucide-react";
 
 const services = [
   {
@@ -14,7 +14,7 @@ const services = [
     icon: Users,
     title: "Guarda de Filhos",
     description: "Definição da guarda unilateral ou compartilhada sempre no melhor interesse da criança.",
-    items: ["Guarda compartilhada", "Guarda unilateral", "Regulamentação de visitas", "Alteração de guarda"],
+    items: ["Guarda Compartilhada", "Guarda unilateral", "Regulamentação de visitas"],
     featured: true,
   },
   {
@@ -22,7 +22,7 @@ const services = [
     icon: DollarSign,
     title: "Pensão Alimentícia",
     description: "Fixação, revisão e execução de alimentos para filhos, cônjuges e parentes.",
-    items: ["Fixação de alimentos", "Revisão de pensão", "Execução de alimentos", "Alimentos gravídicos"],
+    items: ["Fixação de alimentos", "Revisão de pensão", "Execução de alimentos", "Alimentos gravídicos", "Oferta de alimentos"],
     featured: true,
   },
   {
@@ -37,7 +37,7 @@ const services = [
     icon: Home,
     title: "União Estável",
     description: "Reconhecimento, dissolução e regularização de direitos decorrentes da união estável.",
-    items: ["Reconhecimento judicial", "Dissolução de união", "Contrato de convivência", "Partilha de bens"],
+    items: ["Reconhecimento judicial", "Contrato de convivência", "Partilha de bens"],
   },
   {
     id: 6,
@@ -51,14 +51,21 @@ const services = [
     icon: Shield,
     title: "Violência Doméstica",
     description: "Medidas protetivas de urgência e defesa integral das vítimas de violência doméstica.",
-    items: ["Medidas protetivas", "Boletim de ocorrência", "Acompanhamento processual", "Orientação jurídica"],
+    items: ["Medidas protetivas", "Acompanhamento processual", "Orientação jurídica"],
   },
   {
     id: 8,
     icon: AlertTriangle,
     title: "Alienação Parental",
     description: "Identificação e combate à alienação parental para proteção do vínculo afetivo da criança.",
-    items: ["Identificação de alienação", "Ação judicial", "Perícia psicossocial", "Proteção da criança"],
+    items: ["Identificação de alienação", "Ação judicial", "Perícia psicossocial"],
+  },
+  {
+    id: 9,
+    icon: UserCheck,
+    title: "Curatela",
+    description: "Proteção jurídica de pessoas incapazes, garantindo seus direitos e bem-estar.",
+    items: ["Interdição judicial", "Curatela definitiva", "Prestação de contas", "Revisão de curatela"],
   },
 ];
 

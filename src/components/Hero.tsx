@@ -62,7 +62,7 @@ const Hero = () => {
             onClick={() => window.open('https://wa.me/5587991098958?text=Olá! Gostaria de analisar meu caso.', '_blank')}
           >
             <Scale className="w-5 h-5 mr-2" />
-            Analise seu caso
+            Falar com Especialista
           </Button>
           <Button
             variant="outline"

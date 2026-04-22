@@ -18,7 +18,7 @@ const StatsSection = () => {
       icon: Target,
       title: "Áreas",
       description: "Múltiplas frentes do Direito de Família",
-      number: "8",
+      number: "9",
     },
   ];
 

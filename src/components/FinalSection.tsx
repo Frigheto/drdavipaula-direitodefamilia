@@ -85,7 +85,7 @@ const ContactCard = ({ icon: Icon, title, value, link, isEmail = false }: {
         <p className="font-semibold text-muted-foreground">{value}</p>
         {title === "Localização" && (
           <p className="text-xs mt-2 text-muted-foreground opacity-80">
-            Rua Vinte e Um, 490 — Loteamento Recife<br />CEP: 56320-811
+            Rua do Cajueiro, 160 — Sala 6 — Centro<br />Petrolina - PE, CEP: 56304-420
           </p>
         )}
       </div>
@@ -109,7 +109,7 @@ const FinalSection = () => {
             Pronto para Começar?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-            Entre em contato para uma consulta. Vamos analisar seu caso com atenção e oferecer a melhor solução jurídica para sua família.
+            Entre em contato para agendar uma consulta. Vamos analisar seu caso com atenção e oferecer a melhor solução jurídica para sua família.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -150,7 +150,7 @@ const FinalSection = () => {
             icon={MapPin}
             title="Localização"
             value="Petrolina/PE"
-            link="https://maps.google.com/?q=Rua+Vinte+e+Um,+490,+Loteamento+Recife,+Petrolina,+PE"
+            link="https://maps.google.com/?q=Rua+do+Cajueiro,+160,+Sala+6,+Centro,+Petrolina,+PE,+56304-420"
           />
         </div>
 
@@ -181,10 +181,12 @@ const FinalSection = () => {
             <div>
               <h4 className="font-semibold text-foreground mb-4">Redes Sociais</h4>
               <ul className="space-y-2 text-sm">
-                {["Instagram", "Facebook", "LinkedIn"].map((social) => (
-                  <li key={social}>
-                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                      {social}
+                {[
+                  { name: "Instagram", url: "https://www.instagram.com/davimarcula.adv/" },
+                ].map((social) => (
+                  <li key={social.name}>
+                    <a href={social.url} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                      {social.name}
                     </a>
                   </li>
                 ))}

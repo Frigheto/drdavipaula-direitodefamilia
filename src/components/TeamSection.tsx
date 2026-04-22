@@ -9,8 +9,8 @@ const reasons = [
   },
   {
     icon: Scale,
-    title: "Expertise Jurídica",
-    description: "Especialização dedicada ao Direito de Família garante profundo conhecimento técnico para defender seus interesses.",
+    title: "Especialização Jurídica",
+    description: "Dedicação exclusiva ao Direito de Família garante profundo conhecimento técnico para defender seus interesses.",
   },
   {
     icon: MessageCircle,
