@@ -86,7 +86,7 @@ const ContactCard = ({ icon: Icon, title, value, link, isEmail = false }: {
         <p className="font-semibold text-muted-foreground">{value}</p>
         {title === "Localização" && (
           <p className="text-xs mt-2 text-muted-foreground opacity-80">
-            Rua do Cajueiro, 160 — Sala 6 — Centro<br />Petrolina - PE, CEP: 56304-420
+            Rua Coronel Amorim, Galeria Romana, nº 225, 1º Andar, sala nº 11<br />Centro, Petrolina – PE. CEP 56302-320
           </p>
         )}
       </div>
@@ -151,7 +151,7 @@ const FinalSection = () => {
             icon={MapPin}
             title="Localização"
             value="Petrolina/PE"
-            link="https://maps.google.com/?q=Rua+do+Cajueiro,+160,+Sala+6,+Centro,+Petrolina,+PE,+56304-420"
+            link="https://maps.google.com/?q=Rua+Coronel+Amorim,+Galeria+Romana,+225,+Centro,+Petrolina,+PE,+56302-320"
           />
         </div>
 
