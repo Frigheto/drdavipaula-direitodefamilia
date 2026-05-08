@@ -80,7 +80,7 @@ const TeamSection = () => {
           <Button
             className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-6 text-lg transition-all duration-300"
             style={{ boxShadow: "0 0 22px hsl(var(--primary) / 0.35)" }}
-            onClick={() => window.open('https://wa.me/5587991098958?text=Olá! Gostaria de agendar uma consulta.', '_blank')}
+            onClick={() => { (window as any).gtag?.('event', 'conversion', {'send_to': 'AW-18087908707/rrMlCOad9qgcEOOq_rBD'}); window.open('https://wa.me/558791098958?text=Olá! Gostaria de agendar uma consulta.', '_blank'); }}
           >
             Agendar Consulta
           </Button>
