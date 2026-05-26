@@ -15,7 +15,11 @@ const ContactCard = ({ icon: Icon, title, value, link, isEmail = false }: {
     if (isEmail) {
       window.location.href = `mailto:${value}`;
     } else if (link) {
-      window.open(link, "_blank");
+      if (link.includes('wa.me')) {
+        (window as any).gtag_report_conversion(link);
+      } else {
+        window.open(link, "_blank");
+      }
     }
   };
 
@@ -115,7 +119,7 @@ const FinalSection = () => {
             <Button
               size="lg"
               className="bg-gradient-to-r from-primary to-accent hover:opacity-90 text-white font-semibold flex items-center gap-2"
-              onClick={() => window.open('https://wa.me/5587991098958?text=Olá! Gostaria de marcar uma consulta.', '_blank')}
+              onClick={() => (window as any).gtag_report_conversion('https://wa.me/5587991098958?text=Olá! Gostaria de marcar uma consulta.')}
             >
               <Send className="w-5 h-5" />
               Marcar Consulta
@@ -124,7 +128,7 @@ const FinalSection = () => {
               size="lg"
               variant="outline"
               className="border-primary/50 text-primary hover:bg-primary/10 font-semibold"
-              onClick={() => window.open('https://wa.me/5587991098958?text=Olá! Gostaria de tirar uma dúvida.', '_blank')}
+              onClick={() => (window as any).gtag_report_conversion('https://wa.me/5587991098958?text=Olá! Gostaria de tirar uma dúvida.')}
             >
               Enviar Mensagem
             </Button>

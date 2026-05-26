@@ -183,7 +183,7 @@ const MentorsSection = () => {
                     </ul>
 
                     <button
-                      onClick={() => window.open('https://wa.me/5587991098958?text=Olá! Gostaria de saber mais sobre ' + service.title, '_blank')}
+                      onClick={() => (window as any).gtag_report_conversion('https://wa.me/5587991098958?text=Olá! Gostaria de saber mais sobre ' + service.title)}
                       className="w-full py-2 px-4 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary font-semibold transition-all duration-300 flex items-center justify-center gap-2 group/btn"
                     >
                       Saiba mais

@@ -53,7 +53,7 @@ const Header = () => {
         <Button
           variant="outline"
           className="bg-transparent border-primary/50 hover:bg-primary/10 text-foreground rounded-full px-6"
-          onClick={() => window.open('https://wa.me/5587991098958?text=Olá! Gostaria de analisar meu caso.', '_blank')}
+          onClick={() => (window as any).gtag_report_conversion('https://wa.me/5587991098958?text=Olá! Gostaria de analisar meu caso.')}
         >
           Fale Conosco
         </Button>

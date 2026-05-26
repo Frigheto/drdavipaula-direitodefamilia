@@ -110,7 +110,7 @@ const AreaDetailPage = ({ area }: AreaDetailPageProps) => {
                   Clique no botão abaixo para enviar uma mensagem e conversarmos sobre seu caso.
                 </p>
                 <Button
-                  onClick={() => window.open(whatsappLink, "_blank")}
+                  onClick={() => (window as any).gtag_report_conversion(whatsappLink)}
                   className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-full py-3 md:py-4 px-4 text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-2"
                   style={{
                     boxShadow: "0 0 22px hsl(var(--primary) / 0.38)"
@@ -135,7 +135,7 @@ const AreaDetailPage = ({ area }: AreaDetailPageProps) => {
               Nossa equipe está pronta para atender você com experiência e dedicação. Entre em contato conosco.
             </p>
             <Button
-              onClick={() => window.open(whatsappLink, "_blank")}
+              onClick={() => (window as any).gtag_report_conversion(whatsappLink)}
               className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 md:px-12 py-5 md:py-6 text-base md:text-lg font-semibold transition-all duration-300"
               style={{
                 boxShadow: "0 0 22px hsl(var(--primary) / 0.38)"

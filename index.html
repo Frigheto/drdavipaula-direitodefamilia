@@ -28,6 +28,22 @@
 
     gtag('config', 'AW-18188503302');
   </script>
+
+  <!-- Google Ads Conversion Tracking -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18188503302/ot0SCMLS_7McEIaS-uBD',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
 </head>
 
 <body>

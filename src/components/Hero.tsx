@@ -58,7 +58,7 @@ const Hero = () => {
             style={{ boxShadow: '0 0 22px hsl(var(--primary) / 0.38)' }}
             onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 0 36px hsl(var(--primary) / 0.5)'}
             onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 0 22px hsl(var(--primary) / 0.38)'}
-            onClick={() => window.open('https://wa.me/5587991098958?text=Olá! Gostaria de analisar meu caso.', '_blank')}
+            onClick={() => (window as any).gtag_report_conversion('https://wa.me/5587991098958?text=Olá! Gostaria de analisar meu caso.')}
           >
             <Scale className="w-5 h-5 mr-2" />
             Falar com Especialista
